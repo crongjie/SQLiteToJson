@@ -36,6 +36,8 @@
             this.btn_browse = new System.Windows.Forms.Button();
             this.tb_file = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btn_process_large = new System.Windows.Forms.Button();
+            this.btn_process_simple = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // saveFileDialog1
@@ -105,11 +107,33 @@
             // 
             this.openFileDialog1.DefaultExt = "sqlite";
             // 
+            // btn_process_large
+            // 
+            this.btn_process_large.Location = new System.Drawing.Point(134, 477);
+            this.btn_process_large.Name = "btn_process_large";
+            this.btn_process_large.Size = new System.Drawing.Size(118, 27);
+            this.btn_process_large.TabIndex = 15;
+            this.btn_process_large.Text = "Process_large";
+            this.btn_process_large.UseVisualStyleBackColor = true;
+            this.btn_process_large.Click += new System.EventHandler(this.btn_process_large_Click);
+            // 
+            // btn_process_simple
+            // 
+            this.btn_process_simple.Location = new System.Drawing.Point(393, 512);
+            this.btn_process_simple.Name = "btn_process_simple";
+            this.btn_process_simple.Size = new System.Drawing.Size(118, 27);
+            this.btn_process_simple.TabIndex = 16;
+            this.btn_process_simple.Text = "Process(Simlple)";
+            this.btn_process_simple.UseVisualStyleBackColor = true;
+            this.btn_process_simple.Click += new System.EventHandler(this.btn_process_simple_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 516);
+            this.ClientSize = new System.Drawing.Size(558, 551);
+            this.Controls.Add(this.btn_process_simple);
+            this.Controls.Add(this.btn_process_large);
             this.Controls.Add(this.tb_file);
             this.Controls.Add(this.btn_browse);
             this.Controls.Add(this.btn_process);
@@ -133,6 +157,8 @@
         private System.Windows.Forms.Button btn_browse;
         private System.Windows.Forms.TextBox tb_file;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button btn_process_large;
+        private System.Windows.Forms.Button btn_process_simple;
     }
 }
 
